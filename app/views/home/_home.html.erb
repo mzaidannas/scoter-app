@@ -1,0 +1,442 @@
+<body>
+<!-- top header end -->
+<!-- main header start-->
+<div class="main-header">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand-logo" href="http://car-house.sohelrana.me/index.html">
+                    <%= image_tag "logo.png" %>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://car-house.sohelrana.me/index.html" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="http://car-house.sohelrana.me/car_list.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Car Listing<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://car-house.sohelrana.me/car_list.html">Car List</a></li>
+                            <li><a href="http://car-house.sohelrana.me/car_grid.html">Car Grid</a></li>
+                            <li><a href="http://car-house.sohelrana.me/car_details.html">Car Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="http://car-house.sohelrana.me/login.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://car-house.sohelrana.me/login.html">Login</a></li>
+                            <li><a href="http://car-house.sohelrana.me/signup.html">Signup</a></li>
+                            <li><a href="http://car-house.sohelrana.me/forgot_reset.html">Password Reset</a></li>
+                            <li><a href="http://car-house.sohelrana.me/404.html">404</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://car-house.sohelrana.me/about.html">About Us</a></li>
+                    <li><a href="http://car-house.sohelrana.me/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            <!-- /.container -->
+        </nav>
+    </div>
+</div>
+<!--main-header end-->
+
+<!-- banner start-->
+<div class="banner">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item item-1">
+                <div class="container">
+                    <div class="banner-slider-inner-1">
+                        <h1>Dominate</h1>
+                        <h2>The Internet</h2>
+                        <h4>Attract, Engage, &amp; Convert<br>Qualified Vehiche Shoppers</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-2 active">
+                <div class="container">
+                    <div class="banner-slider-inner-1">
+                        <h1>Unlock <span>The Potential</span></h1>
+                        <h4>business from your</h4>
+                        <div class="Website-text">Website</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-3">
+                <div class="container">
+                    <div class="banner-slider-inner-1">
+                        <h1><span>wow Factor?</span><br>Standard</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="http://car-house.sohelrana.me/#carousel-example-generic" role="button" data-slide="prev">
+          <span class="slider-mover-left" aria-hidden="true">
+             <%= image_tag "left-chevron.png" %>
+          </span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="http://car-house.sohelrana.me/#carousel-example-generic" role="button" data-slide="next">
+            <span class="slider-mover-right" aria-hidden="true">
+                <%= image_tag "right-chevron.png" %>
+            </span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<!-- banner End-->
+
+<!-- recent-car start-->
+<div class="recent-car content-area">
+    <div class="container">
+        <div class="recent-car-content">
+            <div class="row margin-b-15">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <i class="fa fa-car"></i>
+                        <h2>Recent cars</h2>
+                        <div class="border"></div>
+                        <h4>Check our recent motors</h4>
+                    </div>
+                </div>
+            </div>
+              <div class="row">
+                <% 10.times do |i| %>
+
+                  <%= render partial: '/shared/listing_grid' %>
+                <% end %>
+              </div>
+        </div>
+    </div>
+</div>
+<!-- recent-car end-->
+
+<!-- testimonials end-->
+<div class="testimonials">
+    <div class="col-lg-12">
+        <div id="carouse2-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carouse2-example-generic" data-slide-to="0" class=""></li>
+                <li data-target="#carouse2-example-generic" data-slide-to="1" class=""></li>
+                <li data-target="#carouse2-example-generic" data-slide-to="2" class="active"></li>
+                <li data-target="#carouse2-example-generic" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item">
+                    <div class="container">
+                        <div class="col-md-8 col-md-offset-2 testimonials-inner">
+                            <p>
+                                <em>"</em>
+                                Lorem ipsum dolor sit amet, nemore facete quo cu, sumo tincidunt pri ex, usu ubique
+                                percipitur ea. Ut fugit quaestio Lorem ipsum dolor sit amet, nemore facete quo cu, sumo
+                                tincidunt pri ex, usu ubique percipitur ea. Ut fugit quaestio
+                                <em>"</em>
+                            </p>
+                            <div class="author-rate">
+                                <%= image_path src="04-testimonial.jpg" %>
+                                <h4>Maria Morris</h4>
+                                <div class="line-dec2"></div>
+                                <span>Car Dealer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="container">
+                        <div class="col-md-12 col-md-8 col-md-offset-2 testimonials-inner">
+                            <p>
+                                <em>"</em>
+                                Lorem ipsum dolor sit amet, nemore facete quo cu, sumo tincidunt pri ex, usu ubique
+                                percipitur ea. Ut fugit quaestio Lorem ipsum dolor sit amet, nemore facete quo cu, sumo
+                                tincidunt pri ex, usu ubique percipitur ea. Ut fugit quaestio
+                                <em>"</em>
+                            </p>
+                            <div class="author-rate">
+                                <%= image_tag "02-testimonial.jpg" %>
+                                <h4>Maria Morris</h4>
+                                <div class="line-dec2"></div>
+                                <span>Car Dealer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item active">
+                    <div class="container">
+                        <div class="col-md-12 col-md-8 col-md-offset-2 testimonials-inner">
+                            <p>
+                                <em>"</em>
+                                Lorem ipsum dolor sit amet, nemore facete quo cu, sumo tincidunt pri ex, usu ubique
+                                percipitur ea. Ut fugit quaestio Lorem ipsum dolor sit amet, nemore facete quo cu, sumo
+                                tincidunt pri ex, usu ubique percipitur ea. Ut fugit quaestio
+                                <em>"</em>
+                            </p>
+                            <div class="author-rate">
+                                <%= image_tag "03-testimonial.jpg" %>
+                                <h4>Maria Morris</h4>
+                                <div class="line-dec2"></div>
+                                <span>Car Dealer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="container">
+                        <div class="col-md-12 col-md-8 col-md-offset-2 testimonials-inner">
+                            <p>
+                                <em>"</em>
+                                Lorem ipsum dolor sit amet, nemore facete quo cu, sumo tincidunt pri ex, usu ubique
+                                percipitur ea. Ut fugit quaestio Lorem ipsum dolor sit amet, nemore facete quo cu, sumo
+                                tincidunt pri ex, usu ubique percipitur ea. Ut fugit quaestio
+                                <em>"</em>
+                            </p>
+                            <div class="author-rate">
+                                <%= image_tag "01-testimonial.jpg" %>
+                                <h4>Maria Morris</h4>
+                                <div class="line-dec2"></div>
+                                <span>Car Dealer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="http://car-house.sohelrana.me/#carouse2-example-generic" role="button" data-slide="prev">
+              <span class="slider-mover-left" aria-hidden="true">
+                 <%= image_tag "left-chevron.png" %>
+              </span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="http://car-house.sohelrana.me/#carouse2-example-generic" role="button" data-slide="next">
+                <span class="slider-mover-right" aria-hidden="true">
+                    <%= image_tag "right-chevron.png" %>
+                </span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!-- testimonials end-->
+
+<!-- footer start-->
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 footer-item ">
+                <div class="footer-item-content">
+                    <%= image_tag "logo.png" %>
+                    <p>Maecenas ne mollis orci. Phasell iacu sapie non aliquet ex euismo ac.</p>
+
+                    <ul>
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#">
+                                <i class="fa fa-map-marker"></i>
+                                Raver Croft Drive Knoxville, 37921
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+55-417-634-7071"><i class="fa fa-phone pr-5 pl-10"></i>  +55 417-634-7071</a>
+                        </li>
+                        <li>
+                            <a href="mailto:sales@carhouse.com">
+                                <i class="fa fa-envelope-o pr-5 pl-10"></i> sales@carhouse.com
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#" class="facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#" class="twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#" class="linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#" class="google">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#" class="rss">
+                                <i class="fa fa-rss"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#" class="vimeo">
+                                <i class="fa fa-vimeo"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-6 footer-item">
+                <div class="footer-item-content">
+                    <h2>What we offer ?</h2>
+                    <div class="line-dec"></div>
+                    <ul>
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#">Rent a car now</a>
+                        </li>
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#">Search for sale</a>
+                        </li>
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#">Best daily dealers</a>
+                        </li>
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#">Weekly lucky person</a>
+                        </li>
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#">Change car color</a>
+                        </li>
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#">Rent a car now</a>
+                        </li>
+
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#">Best daily dealers</a>
+                        </li>
+                        <li>
+                            <a href="http://car-house.sohelrana.me/#">Change car color</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-6 footer-item ">
+                <div class="footer-item-content">
+                    <h2>tags</h2>
+                    <div class="line-dec"></div>
+                    <a href="http://car-house.sohelrana.me/#" class="tags">Apps</a>
+                    <a href="http://car-house.sohelrana.me/#" class="tags">gallery</a>
+                    <a href="http://car-house.sohelrana.me/#" class="tags">photography</a>
+                    <a href="http://car-house.sohelrana.me/#" class="tags">Web</a>
+                    <a href="http://car-house.sohelrana.me/#" class="tags">blog right sidebar</a>
+                    <a href="http://car-house.sohelrana.me/#" class="tags">books</a>
+                    <a href="http://car-house.sohelrana.me/#" class="tags">business</a>
+                    <a href="http://car-house.sohelrana.me/#" class="tags">design</a>
+                    <a href="http://car-house.sohelrana.me/#" class="tags">education</a>
+                    <a href="http://car-house.sohelrana.me/#" class="tags">Fitness</a>
+                    <a href="http://car-house.sohelrana.me/#" class="tags">pen</a>
+                    <a href="http://car-house.sohelrana.me/#" class="tags">real</a>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 footer-item ">
+                <div class="footer-item-content">
+                    <h2>Recent motors</h2>
+                    <div class="line-dec"></div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="http://car-house.sohelrana.me/#">
+                                <%= image_tag "pic-footer-3.jpg", class: "media-object" %>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="http://car-house.sohelrana.me/car_details.html">Mercedes Benz C Class</a>
+                            <div class="line-dec-o"></div>
+                            <span>$42.000</span>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="http://car-house.sohelrana.me/car_details.html">
+                                <%= image_tag  "pic-footer-1.jpg", class: "media-object" %>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="http://car-house.sohelrana.me/car_details.html">BMW e46 m3 diski serie</a>
+                            <div class="line-dec-o"></div>
+                            <span>$49.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-6 footer-item ">
+                <div class="footer-item-content">
+                    <h2>Gallery</h2>
+                    <div class="line-dec"></div>
+                    <div class="gallery-item">
+                        <%= image_tag "01-gallery.jpg" %>
+                    </div>
+                    <div class="gallery-item">
+                        <%= image_tag "02-gallery.jpg" %>
+                    </div>
+                    <div class="gallery-item">
+                        <%= image_tag "03-gallery.jpg" %>
+                    </div>
+                    <div class="gallery-item">
+                        <%= image_tag "04-gallery.jpg" %>
+                    </div>
+                    <div class="gallery-item">
+                        <%= image_tag "05-gallery.jpg" %>
+                    </div>
+                    <div class="gallery-item">
+                        <%= image_tag "06-gallery.jpg" %>
+                    </div>
+                    <div class="gallery-item">
+                        <%= image_tag "07-gallery.jpg" %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer end-->
+
+<!-- sub-footer start-->
+<div class="sub-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <p>Copyright 2016. All rights reserved by:<span> the carhouse</span></p>
+            </div>
+            <div class="col-md-6 col-sm-6 hidden-xs ">
+                <ul>
+                    <li>
+                        <a href="http://car-house.sohelrana.me/contact.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="http://car-house.sohelrana.me/about.html">About Us</a>
+                    </li>
+                     <li>
+                        <a href="http://car-house.sohelrana.me/car_list.html">Car Listing</a>
+                    </li>
+                    <li>
+                        <a href="http://car-house.sohelrana.me/index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sub-footer end-->
+</body>
