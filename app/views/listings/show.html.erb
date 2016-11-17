@@ -1,0 +1,151 @@
+<div class="car-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="option-bar">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9 col-sm-9">
+                            <div class="section-heading">
+                                <i class="fa fa-car"></i>
+                                <h2 style="font-size: 25px"><%= @listing.title %></h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 text-right">
+                            <div class="car-details-header-price">
+                                <h3>PKR <%= @listing.price %></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <!-- car-detail-slider start-->
+                <div class="car-detail-slider">
+                    <div id="carousel-custom" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-outer">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <% @listing.images.try(:each_with_index) do |image, index| %>
+                                    <div class="item <%= index == 0 ? 'active' : '' %>">
+                                        <%= image_tag image.image_url, class: "thumb-preview" %>
+                                    </div>
+                                <% end %>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="http://car-house.sohelrana.me/car_details.html#carousel-custom" role="button" data-slide="prev">
+                              <span class="slider-mover-left no-bg" aria-hidden="true">
+                                 <%= image_tag "left-chevron.png" %>
+                              </span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="http://car-house.sohelrana.me/car_details.html#carousel-custom" role="button" data-slide="next">
+                                <span class="slider-mover-right no-bg" aria-hidden="true">
+                                     <%= image_tag "right-chevron.png" %>
+                                </span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <ol class="carousel-indicators thumbs visible-lg visible-md" style="overflow: scroll;">
+                            <% @listing.images.try(:each_with_index) do |image, index| %>
+                                <li data-target="#carousel-custom" data-slide-to=<%= index %> class = "<%= index == 0 ? 'active' : '' %>" ><%= image_tag  image.image_url%></li>
+                            <% end %>
+                        </ol>
+                    </div>
+                </div>
+                <!-- banner End-->
+                <div class="clearfix"></div>
+                <!--car-details-content-body start-->
+                <div class="car-details-content-body">
+                    <div class="panel with-nav-tabs panel-default">
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="tab1default">
+                                    <u><h4 style="color: #666" >Owner Comments:  </h4></u><br>
+                                    <p><%= @listing.description %></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="car-sidebar-right">
+                    <div class="dealer-contact mrg-b-30">
+                        <h2 class="title">dealer contact</h2>
+                        <ul class="car-detail-info-list">
+                            <li>
+                                <span>Contact:</span> <%= @listing.person_name %>
+                            </li>
+                            <li>
+                                <span>City:</span> <%= @listing.city %>
+                            </li>
+                            <li>
+                                <span>Address:</span> <%= @listing.address %>
+                            </li>
+                            <li>
+                                <span>Phone:</span> <%= @listing.mobile %>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dealer-contact mrg-b-30">
+                        <h2 class="title">Detials</h2>
+                        <ul class="car-detail-info-list">
+                            <li>
+                                <span>Body Style:</span>Convertible
+                            </li>
+                            <li>
+                                <span>Engine:</span>3.4L Mid-Engine V6
+                            </li>
+                            <li>
+                                <span>Transmission:</span>6-speed Manual
+                            </li>
+                            <li>
+                                <span>Drivetrain:</span>Rear Wheel Drive
+                            </li>
+                            <li>
+                                <span>Exaterion:</span>Lime Gold Metallic
+                            </li>
+                            <li>
+                                <span>Interior:</span>Agate Grey
+                            </li>
+                            <li>
+                                <span>Miles:</span>12
+                            </li>
+                            <li>
+                                <span>Doors:</span>2
+                            </li>
+                            <li>
+                                <span>Passengers:</span>2
+                            </li>
+                            <li>
+                                <span>Vin #:</span>WP0AB2E81EK190171
+                            </li>
+                            <li>
+                                <span>Fuel Mileage:</span>20 City / 28 Hwy
+                            </li>
+                            <li>
+                                <span>Fuel Type:</span>Gasoline
+                            </li>
+                            <li>
+                                <span>Vin #:</span>WP0AB2E81EK190171
+                            </li>
+
+                            <li>
+                                <span>Condition:</span>Brand New
+                            </li>
+                            <li>
+                                <span>Owners:</span>N/A
+                            </li>
+                            <li>
+                                <span>Waeeanty:</span>3 Years Limited
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--comments-box end-->
+    </div>
+</div>

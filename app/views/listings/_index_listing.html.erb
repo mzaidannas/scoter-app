@@ -1,0 +1,41 @@
+<div class="car-box">
+    <div class="row">
+        <div class="col-lg-4 col-sm-4 col-xs-12 car-pic-m">
+            <%= image_tag listing.images.first.image_url, class: "img-responsive list-car-pic", style: "width: 219px; height: 219px;" if listing.images.any? %>
+        </div>
+        <div class="col-lg-8 col-sm-8 col-xs-12 car-box-body">
+            <div class="header b-items-cars-one-info-header  s-lineDownLeft">
+                <h3>
+                    <%= link_to listing.title, listing %>
+                    <span>PKR <%= listing.price %></span>
+                </h3>
+            </div>
+            <div class="line-border"></div>
+            <p><%= listing.description %></p>
+            <div class="car-box-body-inner">
+                <div class="col-md-5 col-sm-5 col-xs-12 col-pad-0 clearfix">
+                    <p>
+                        <span>Make</span> <%= listing.maker.name rescue 'N/A' %>
+                    </p>
+                    <p>
+                        <span>Mileage</span> <%= listing.mileage || 'NA' %>
+                    </p>
+                    <p>
+                        <span>Year</span> <%= listing.model || 'N/A' %>
+                    </p>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-12 col-pad-0 clearfix">
+                    <p>
+                        <span>Engine CC</span> <%= listing.engine || 'N/A' %>
+                    </p>
+                    <p>
+                        <span>City</span> <%= listing.city || 'N/A' %>
+                    </p>
+                    <p>
+                        <span>Color</span> <%= listing.color || 'N/A' %>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

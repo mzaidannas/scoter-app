@@ -1,0 +1,82 @@
+<%#= form_for(@listing, class: "form-ad" , multipart: true) do |f|  %>
+<%= form_for @listing do |f|  %>  
+  <%= hidden_field_tag :id, @listing.id %>
+  <div class="form-group is-empty">
+    <label class="control-label">Title</label>
+    <%= f.text_field :title, class: "form-control input-md", required: true, autofocus: true %>
+    <span class="help-block">A great title needs at least 60 characters. </span>
+    <span class="material-input"></span>
+  </div>
+
+  <div class="form-group col-md-4">
+    <label class="control-label">Make</label>
+    <%= f.select :maker_id, options_from_collection_for_select(@makers,"id", "name") ,{prompt: "Select Maker..."},{class: 'form-control'} %>
+  </div>
+  <div class="form-group col-md-4">
+    <label class="control-label">Engine Cc </label>
+    <%= f.select :engine, options_for_select(%w[70 80 100 110 125 150 160 200 250 300 350 400 450 500 550 600 650 700 750 800 850 900 950 1000 1100 1200 1300 1400 1500 1600 1700 1800 1900 2000]) ,{prompt: "Select Engine..."},{class: 'form-control'} %>
+  </div>
+  <div class="form-group col-md-4">
+    <label class="control-label">Year </label>
+    <%= f.select :model, options_for_select(1970..2017) ,{prompt: "Select Year..."},{class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <label class="control-label" for="textarea">Describe ad </label>
+    <%= f.text_area :description ,class: "form-control", rows: 9 %><i>Describe what makes your ad unique</i></textarea>
+    <span class="material-input"></span>
+  </div>    
+  <div class="form-group col-md-4">
+    <label class="control-label">Mileage</label>
+    <%= f.text_field :mileage, class: "form-control input-md", required: true, autofocus: true %>
+  </div>
+  <div class="form-group col-md-4">
+    <label class="control-label" for="textarea">Color</label>
+    <%= f.text_field :color, class: "form-control input-md", required: true, autofocus: true %>
+    <span class="material-input"></span>
+  </div>
+  <div class="form-group col-md-4">
+    <label class="control-label" for="textarea">Price (RS)</label>
+    <%= f.text_field :price, class: "form-control input-md", style: "border: 2px solid red;" ,required: true, autofocus: true %>
+    <span class="material-input"></span>
+  </div>
+<!--   <h2 class="title-2">Classified Picture</h2>
+  <div class="form-group">
+    <%#= f.fields_for(@listing.images.new, html: { multipart: true, id: "images",class: "dropzone"}) do |p| %>
+      <%#= p.file_field :image_url %>
+    <%# end %>
+    <p><%#= link_to_add_fields "add more", f, :images %></p>
+  </div> -->
+
+  <h2 class="title-2">
+    Your personal details
+  </h2>
+  <div class="form-group is-empty col-md-4">
+    <label class="control-label" for="textarea">Name</label>
+    <%= f.text_field :person_name, class: "form-control input-md", required: true, autofocus: true %>
+  <span class="material-input"></span></div>
+  <div class="form-group is-empty col-md-4">
+    <label class="control-label" for="textarea">Contact #</label>
+    <%= f.text_field :mobile, class: "form-control input-md", required: true, autofocus: true %>
+  <span class="material-input"></span></div>
+  <div class="form-group col-md-4">
+    <label class="control-label" for="textarea">City</label>
+    <%= f.select :city, options_for_select(@cities) ,{prompt: "Select City..."},{class: 'form-control'} %>
+  <span class="material-input"></span></div> 
+  <div class="form-group is-empty col-md-12">
+    <label class="control-label" for="textarea">Address Or Near By Location</label>
+    <%= f.text_field :address, class: "form-control input-md", required: true, autofocus: true %>
+  <span class="material-input"></span></div>
+  
+  <div class="form-group">
+    <div class="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet porta eros, eget facilisis arcu. Duis condimentum fermentum enim, ac rutrum erat venenatis vel. Morbi pharetra viverra faucibus.</p>
+      <div class="checkbox">
+        <label><input checked="checked" type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Sign Up for Newsletter</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> I agree to the <a href="http://demo.graygrids.com/themes/classix/post-ads.html#">Terms of Use</a></label>
+      </div>
+      <%= f.submit 'Submit', class: "btn btn-common" %>
+    </div> 
+  </div>                            
+<% end %>

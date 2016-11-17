@@ -4,9 +4,11 @@
 	  <title>Bike</title>
 	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%#= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.js' %>
 	  <%= csrf_meta_tags %>
 	</head>
 	<body>
-		<%= yield %>
+		<%= render 'shared/header' %>
+		<div style="margin-top: 5px"><%= yield %></div>
 	</body>
 </html>
