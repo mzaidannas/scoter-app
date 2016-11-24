@@ -47,11 +47,6 @@ p {
 }
 a {
   color: #444;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
 }
 a:hover,
 a:focus {
@@ -107,11 +102,6 @@ h3.block-title {
   color: #fff;
   border-radius: 4px;
   position: relative;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.15);
   border: none;
   text-transform: uppercase;
@@ -451,10 +441,6 @@ nav#menu span.fa.fa-bars:hover {
 .main-navigation .navbar-nav {
   margin-top: 20px;
   position: relative;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
 }
 .main-navigation .navbar-nav > li a {
   color: #444;
@@ -490,11 +476,6 @@ nav#menu span.fa.fa-bars:hover {
   line-height: normal;
   text-transform: uppercase;
   width: 140px;
-  webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
 }
 .main-navigation .navbar-nav > li.postadd a:hover {
   color: #fff;
@@ -701,11 +682,6 @@ select > opation:focus {
   box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   border-radius: 0;
   position: relative;
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -ms-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear;
 }
 .category-box:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -733,11 +709,6 @@ select > opation:focus {
   text-align: center;
   padding: 40px 15px 20px;
   border-bottom: 1px solid #EEE;
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -ms-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear;
 }
 .category-box .category-header h4 {
   font-size: 18px;
@@ -847,10 +818,6 @@ select > opation:focus {
   font-size: 18px;
   margin-bottom: 5px;
   font-weight: 600;
-  transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
 }
 .features-box .features-content p {
   color: #888;
@@ -873,18 +840,8 @@ select > opation:focus {
   position: relative;
   z-index: 99;
   overflow: hidden;
-  -webkit-transition: all .4s ease;
-  -moz-transition: all .4s ease;
-  -ms-transition: all .4s ease;
-  -o-transition: all .4s ease;
-  transition: all .4s ease;
 }
 #new-products .product-item .carousel-thumb img {
-  -webkit-transition: all 0.9s ease;
-  -moz-transition: all 0.9s ease;
-  -ms-transition: all 0.9s ease;
-  -0-transition: all 0.9s ease;
-  transition: all 0.9s ease;
 }
 #new-products .product-item .carousel-thumb .overlay {
   position: absolute;
@@ -896,11 +853,6 @@ select > opation:focus {
   bottom: -1px;
   right: 0;
   opacity: 0;
-  -webkit-transition: all .4s ease;
-  -moz-transition: all .4s ease;
-  -ms-transition: all .4s ease;
-  -o-transition: all .4s ease;
-  transition: all .4s ease;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
@@ -929,11 +881,6 @@ select > opation:focus {
   -ms-transform: scale(0.2);
   -o-transform: scale(0.2);
   transform: scale(0.2);
-  -webkit-transition: all .4s ease;
-  -moz-transition: all .4s ease;
-  -ms-transition: all .4s ease;
-  -o-transition: all .4s ease;
-  transition: all .4s ease;
 }
 #new-products .product-item .carousel-thumb:hover img {
   -webkit-transform: scale(0.9);
@@ -992,10 +939,6 @@ select > opation:focus {
   opacity: 1!important;
   border-radius: 0!important;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-  transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
 }
 .owl-theme .owl-controls .owl-buttons div:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -1055,11 +998,6 @@ select > opation:focus {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
 }
 .counting .icon span i {
   color: #fff;
@@ -1169,11 +1107,6 @@ footer .menu li a:hover {
   z-index: 1;
   opacity: 0;
   text-align: center;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
 }
 .featured-list li .hover a span {
   color: #FFF;
@@ -1569,11 +1502,6 @@ footer .menu li a:hover {
 #pricing-table .table {
   padding-bottom: 50px;
   border: 1px solid #eee;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
 }
 #pricing-table .table .pricing-header {
   position: relative;
@@ -1583,11 +1511,6 @@ footer .menu li a:hover {
   border-bottom: 1px solid #eee;
   border-top: 1px solid #eee;
   margin-bottom: 50px;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
 }
 #pricing-table .table .pricing-header .price-value {
   font-size: 64px;
@@ -1704,11 +1627,6 @@ footer .menu li a:hover {
   color: #888;
   font-size: 11px;
   line-height: 20px;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
 }
 .table-search .control-label {
   line-height: 16px;
@@ -1849,10 +1767,6 @@ table.add-manage-table > tbody > tr > th {
 }
 .f-category img {
   display: inline-block;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
 }
 .f-category:hover img {
   -webkit-transform: scale(0.9);
@@ -1964,10 +1878,6 @@ table.add-manage-table > tbody > tr > th {
   font-size: 22px;
   text-align: center;
   background-color: #3498db;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
 }
 /* ==========================================================================
    Custom Component
@@ -2002,9 +1912,6 @@ table.add-manage-table > tbody > tr > th {
   height: 100%;
   background: rgba(246, 246, 246, 0.5);
   opacity: 0;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 .blog-post .post-thumb:hover .hover-wrap {
   opacity: 1;
@@ -2111,10 +2018,6 @@ table.add-manage-table > tbody > tr > th {
   border: 1px solid #CCC;
   padding: 3px;
   margin: 5px 15px 0 0;
-  transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
 }
 #sidebar .posts-list .widget-thumb:hover img {
   border-color: #3498db;
@@ -2141,10 +2044,6 @@ table.add-manage-table > tbody > tr > th {
   border: 1px solid #CCC;
   margin: 4px 1px;
   border-radius: 0x;
-  transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
 }
 #sidebar .tag a i {
   padding-right: 5px;
@@ -2238,10 +2137,6 @@ table.add-manage-table > tbody > tr > th {
   border-radius: 0px;
   font-size: 14px;
   float: right;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 .respond-title {
   font-size: 20px;
