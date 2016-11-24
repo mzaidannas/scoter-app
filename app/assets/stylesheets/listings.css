@@ -251,9 +251,6 @@ select.form-control:focus {
   width: 50%;
   height: 50%;
   position: relative;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
 }
 .sk-folding-cube .sk-cube:before {
   content: '';
@@ -270,16 +267,11 @@ select.form-control:focus {
   transform-origin: 100% 100%;
 }
 .sk-folding-cube .sk-cube2 {
-  -webkit-transform: scale(1.1) rotateZ(90deg);
-  transform: scale(1.1) rotateZ(90deg);
 }
 .sk-folding-cube .sk-cube3 {
-  -webkit-transform: scale(1.1) rotateZ(180deg);
-  transform: scale(1.1) rotateZ(180deg);
 }
 .sk-folding-cube .sk-cube4 {
-  -webkit-transform: scale(1.1) rotateZ(270deg);
-  transform: scale(1.1) rotateZ(270deg);
+
 }
 .sk-folding-cube .sk-cube2:before {
   -webkit-animation-delay: 0.3s;
@@ -853,11 +845,6 @@ select > opation:focus {
   bottom: -1px;
   right: 0;
   opacity: 0;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
 }
 #new-products .product-item .carousel-thumb .overlay i {
   position: absolute;
@@ -876,18 +863,8 @@ select > opation:focus {
   box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.25);
   opacity: 0;
   z-index: 99;
-  -webkit-transform: scale(0.2);
-  -moz-transform: scale(0.2);
-  -ms-transform: scale(0.2);
-  -o-transform: scale(0.2);
-  transform: scale(0.2);
 }
 #new-products .product-item .carousel-thumb:hover img {
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  -0-transform: scale(0.9);
-  transform: scale(0.9);
 }
 #new-products .product-item .carousel-thumb:hover {
   border-color: #3498db;
@@ -899,11 +876,6 @@ select > opation:focus {
 #new-products .product-item .carousel-thumb:hover i {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -0-transform: scale(1);
-  transform: scale(1);
 }
 #new-products .product-item .item-name {
   font-size: 14px;
@@ -1016,11 +988,6 @@ select > opation:focus {
 }
 .counting:hover span {
   background: #3498db;
-  -webkit-transform: scale(1.1, 1.1);
-  -moz-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  -o-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
 }
 /* ==========================================================================
    Newsletter Style
@@ -1769,11 +1736,6 @@ table.add-manage-table > tbody > tr > th {
   display: inline-block;
 }
 .f-category:hover img {
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  -o-transform: scale(0.9);
-  transform: scale(0.9);
 }
 .item-list.make-grid {
   float: left;
