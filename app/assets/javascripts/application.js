@@ -15,3 +15,10 @@
 //= require turbolinks
 //= require dropzone
 //= require_tree .
+
+$(document).on('turbolinks:load', function(){
+    $(document).on('turbolinks:load click', '.reload', function(){
+        console.log("I am here")
+        location.reload();
+    });
+});

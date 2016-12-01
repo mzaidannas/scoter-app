@@ -119,6 +119,7 @@ h3.block-title {
 }
 .btn-danger:hover {
   background: #ed6763;
+  color: #F34B0A !important;
 }
 .btn-border {
   background: #4285F4;
