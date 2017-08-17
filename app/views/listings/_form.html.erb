@@ -39,13 +39,6 @@
     <%= f.text_field :price, class: "form-control input-md", style: "border: 2px solid red;" ,required: true, autofocus: true %>
     <span class="material-input"></span>
   </div>
-<!--   <h2 class="title-2">Classified Picture</h2>
-  <div class="form-group">
-    <%#= f.fields_for(@listing.images.new, html: { multipart: true, id: "images",class: "dropzone"}) do |p| %>
-      <%#= p.file_field :image_url %>
-    <%# end %>
-    <p><%#= link_to_add_fields "add more", f, :images %></p>
-  </div> -->
 
   <h2 class="title-2">
     Your personal details
@@ -69,13 +62,6 @@
   
   <div class="form-group">
     <div class="">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet porta eros, eget facilisis arcu. Duis condimentum fermentum enim, ac rutrum erat venenatis vel. Morbi pharetra viverra faucibus.</p>
-      <div class="checkbox">
-        <label><input checked="checked" type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Sign Up for Newsletter</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> I agree to the <a href="http://demo.graygrids.com/themes/classix/post-ads.html#">Terms of Use</a></label>
-      </div>
       <%= f.submit 'Submit', class: "btn btn-common" %>
     </div> 
   </div>                            

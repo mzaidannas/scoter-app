@@ -9,24 +9,72 @@
 	            </div>
 				<div class="col-lg-4 col-md-3 col-xs-12">
 	                <aside class="sidebar">
-	                    <div class="section-heading" style="padding: 0px 0px 15px 0px">
-	                        <i class="fa fa-search"></i>
-	                        <h2>Search Bike</h2>
-	                        <div class="border"></div>
+	                    <br>
+	                    <div class="row">
+		                    <div class="col-md-12">
+		                    	<%= submit_tag 'Apply Filters', class: "btn btn-block btn-lg btn-danger" %>
+		                    </div>	
 	                    </div>
 	                    <div class="search-block">
-	                        <br>
-	                        <br>
-	                        <%= text_field_tag :keyword, '' ,class: 'form-control', placeholder: "Make, Model" %>
+	                    	<div class="row">
+		                        <br>
+		                        <div class="col-md-12">
+	                                <h2 class="title">Search Keyword</h2><br>
+	                        	</div>
+	                        	<div class="col-md-12">
+		                        	<%= text_field_tag :keyword, '' ,class: 'form-control', placeholder: "Make, Model" %>
+	                        	</div>
+	                    	</div>
+
+	                        <hr>
+	                        <div class="row">
+		                        <div class="col-md-12">
+	                                <h2 class="title">City</h2><br>
+	                        	</div>
+	                        	<div class="col-md-12">
+		                        	<%= select_tag :city, options_for_select(@cities) ,{ prompt: "Select City" ,class: 'form-control', placeholder: "Make, Model"} %>
+	                        	</div>
+	                    	</div>
+
+	                        <hr>
 	                        <div class="row">
 	                            <div class="price-box">
+	                            	<div class="col-md-12">
+		                                <h2 class="title">Price Range</h2><br>
+	                            	</div>
 	                                <div class="col-lg-6">
-	                                    <label>Min price</label>
-	                                    <input class="form-control" placeholder="Min price" id="minPrice" value="1000">
+	                                    <input class="form-control" placeholder="Min price" name="minPrice">
 	                                </div>
 	                                <div class="col-lg-6">
-	                                    <label>Max price</label>
-	                                    <input class="form-control" placeholder="Min price" id="maxPrice" value="50000">
+	                                    <input class="form-control" placeholder="Max price" name="maxPrice">
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <hr>
+	                        <div class="row">
+	                            <div class="price-box">
+	                            	<div class="col-md-12">
+		                                <h2 class="title">Year Range</h2><br>
+	                            	</div>
+	                                <div class="col-lg-6">
+	                                    <input class="form-control" placeholder="Min" name="minYear">
+	                                </div>
+	                                <div class="col-lg-6">
+	                                    <input class="form-control" placeholder="Min" name="maxYear">
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <hr>
+	                        <div class="row">
+	                            <div class="price-box">
+	                            	<div class="col-md-12">
+	                                    <h2 class="title">Engine Power (cc)</h2><br>
+	                            	</div>
+	                                <div class="col-lg-6">
+	                                    <input class="form-control" placeholder="Min" name="minEngine">
+	                                </div>
+	                                <div class="col-lg-6">
+	                                    <input class="form-control" placeholder="Max" name="maxEngine">
 	                                </div>
 	                            </div>
 	                        </div>
@@ -137,6 +185,13 @@
 	                            </label>
 	                        </div>
 	                    </div> -->
+	                    <br>
+	                    <div class="row">
+		                    <div class="col-md-12">
+		                    	<%= submit_tag 'Apply Filters', class: "btn btn-block btn-lg btn-danger" %>
+		                    </div>	
+	                    </div>
+	                    
 	                </aside>
 	            </div>
 	        </div>

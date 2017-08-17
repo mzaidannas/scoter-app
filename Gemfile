@@ -32,6 +32,9 @@ gem 'activesupport-json_encoder'
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'dropzonejs-rails'
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+gem 'bonsai-elasticsearch-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
