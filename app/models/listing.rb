@@ -1,6 +1,7 @@
 require 'elasticsearch/model'
 
 class Listing < ActiveRecord::Base
+  searchkick
 	include Searchable
 	include Elasticsearch::Model
   include Elasticsearch::Model::Callbacks
@@ -20,7 +21,7 @@ class Listing < ActiveRecord::Base
       indexes :price, analyzer: 'english', index_options: 'offsets'
       indexes :model, analyzer: 'english', index_options: 'offsets'
       indexes :engine, analyzer: 'english', index_options: 'offsets'
-      indexes :city, analyzer: 'english', index_options: 'offsets'
+      indexes :city, analyzer: 'english', index_options: 'offsets',"null_value": "NULL"
     end
   end
 
@@ -28,5 +29,4 @@ class Listing < ActiveRecord::Base
 	has_many :images
 	belongs_to :maker
 	accepts_nested_attributes_for :images
-
 end

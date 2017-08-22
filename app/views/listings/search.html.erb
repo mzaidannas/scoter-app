@@ -1,0 +1,13 @@
+<%= form_tag search_listings_path do  %>
+  <div class="car-list content-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <% @listings.try(:each) do |listing| %>
+                  <%= render 'index_listing' ,listing: listing %>
+                <% end %>
+              </div>
+          </div>
+      </div>
+  </div>
+<% end %>

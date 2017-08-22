@@ -35,6 +35,7 @@ gem 'dropzonejs-rails'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 gem 'bonsai-elasticsearch-rails'
+gem 'searchkick'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

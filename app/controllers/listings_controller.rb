@@ -6,7 +6,7 @@ class ListingsController < ApplicationController
   		"Bagh","Bahawalnagar","Burewala","Banda Daud Shah","Bannu district|Bannu","Batagram","Bazdar",
   		"Bela","Bellpat","Bhag","Bhakkar","Bhalwal","Bhimber","Birote","Buner","Burj","Chiniot","Chachro",
   		"Chagai","Chah Sandan","Chailianwala","Chakdara","Chakku","Chakwal","Chaman","Charsadda","Chhatr",
-  		"Chichawatni","Chitral","Dadu","Dera Ghazi Khan","Dera Ismail Khan", "Dalbandin","Dargai","Darya Khan",
+  		"Chichawatni","Chitral","Chunain","Dadu","Dera Ghazi Khan","Dera Ismail Khan", "Dalbandin","Dargai","Darya Khan",
   		"Daska","Dera Bugti","Dhana Sar","Digri","Dina City|Dina","Dinga",",Pakistan|Diplo","Diwana","Dokri","Drosh",
   		"Duki","Dushi","Duzab","Faisalabad","Fateh Jang","Ghotki","Gwadar","Gujranwala","Gujrat","Gadra","Gajar",
   		"Gandava","Garhi Khairo","Garruck","Ghakhar Mandi","Ghanian","Ghauspur","Ghazluna","Girdan","Gulistan","Gwash",
@@ -70,13 +70,15 @@ class ListingsController < ApplicationController
       "Sui","Sujawal","Sukkur","Suntsar","Surab","Swabi","Swat","Tando Adam","Tando Bago","Tangi","Tank City",
       "Tar Ahamd Rind","Thalo","Thatta","Toba Tek Singh","Tordher","Tujal","Tump","Turbat","Umarao","Umarkot",
       "Upper Dir","Uthal","Vehari","Veirwaro","Vitakri","Wadh","Wah Cantt","Warah","Washap","Wasjuk","Wazirabad",
-      "Yakmach","Zhob","Other"]
+      "Yakmach","Zhob","Osdther"]
   	@listings = Listing.where.not(title: nil).includes(:images).order('created_at DESC')
+    @makers = Maker.all
   end
 
   def update
   	@listing = Listing.find_or_create_by({id: params[:id]})
   	@listing.update(create_params)
+    # return render json: @listing
   	Listing.where(title: nil).delete_all
   	# return render json: params
   	redirect_to @listing, notice: "Your Ad is Live Now!!!"
@@ -95,7 +97,7 @@ class ListingsController < ApplicationController
   end
 
   def search
-  	return render json: params
+      @listings = Listing.search params
   end
 
   private
