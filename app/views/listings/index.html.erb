@@ -2,10 +2,8 @@
 	<div class="car-list content-area">
 	  <div class="container">
 	    <div class="row">
-	      <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        	<% @listings.try(:each) do |listing| %>
-        		<%= render 'index_listing', listing: listing %>
-        	<% end %>
+	      <div id="show-listing" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      		<%= render 'index_listing' %>
 	      </div>
 				<div class="col-lg-4 col-md-3 col-xs-12">
           <aside class="sidebar">

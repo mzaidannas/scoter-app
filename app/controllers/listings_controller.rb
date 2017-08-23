@@ -97,7 +97,11 @@ class ListingsController < ApplicationController
   end
 
   def search
-      @listings = Listing.search params
+    @listings = Listing.search params
+    respond_to do |format|
+      format.js
+      # format.html
+    end
   end
 
   private
