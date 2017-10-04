@@ -22,6 +22,8 @@ gem 'carrierwave'
 
 # Use puma as the app server
 gem 'puma'
+
+# Use dropzonejs for image file upload on client side
 gem 'dropzonejs-rails'
 
 # Elasticsearch integration for rails active record
@@ -45,4 +47,6 @@ group :development, :test do
 
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', group: :doc
+
+  gem 'listen'
 end

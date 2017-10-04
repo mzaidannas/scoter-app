@@ -12,3 +12,12 @@
 !/log/.keep
 /tmp
 /codebin.txt
+
+# Ignore vscode configuration files
+/.vscode/*
+
+# Ignore rails public assets folder
+/public/*
+
+# Ignore rails credential files
+/config/database.yml
