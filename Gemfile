@@ -25,6 +25,8 @@ gem 'puma'
 
 # Use dropzonejs for image file upload on client side
 gem 'dropzonejs-rails'
+# Use city-state gem for list of all countries, states and cities(always updated from MadMax server)
+gem 'city-state'
 
 # Elasticsearch integration for rails active record
 gem 'elasticsearch-model'
