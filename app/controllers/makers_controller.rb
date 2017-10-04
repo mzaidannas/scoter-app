@@ -1,5 +1,5 @@
 class MakersController < ApplicationController
-  before_action :set_maker, only: [:show, :edit, :update, :destroy]
+  before_action :set_maker, only: %i[show edit update destroy]
 
   # GET /makers
   # GET /makers.json
@@ -9,8 +9,7 @@ class MakersController < ApplicationController
 
   # GET /makers/1
   # GET /makers/1.json
-  def show
-  end
+  def show; end
 
   # GET /makers/new
   def new
@@ -18,8 +17,7 @@ class MakersController < ApplicationController
   end
 
   # GET /makers/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /makers
   # POST /makers.json
@@ -62,13 +60,14 @@ class MakersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_maker
-      @maker = Maker.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def maker_params
-      params.require(:maker).permit(:name)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_maker
+    @maker = Maker.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def maker_params
+    params.require(:maker).permit(:name)
+  end
 end
