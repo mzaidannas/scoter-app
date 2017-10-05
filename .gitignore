@@ -25,3 +25,6 @@
 
 # Ignore rails credential files
 /config/database.yml
+
+# Ignore postgres database dump files
+/latest.dump
