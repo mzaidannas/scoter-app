@@ -15,6 +15,10 @@
 
 # Ignore vscode configuration files
 /.vscode/*
+/jsconfig.json
+# Ignore eslint and typings files
+/.eslintrc.json
+/typings.json
 
 # Ignore rails public assets folder
 /public/*

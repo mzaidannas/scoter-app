@@ -10,6 +10,10 @@ gem 'sass-rails'
 gem 'uglifier'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+# Use bootstrap3 as frontend styling framework
+gem 'bootstrap-sass'
+# Use font-awesome for different icons
+gem 'font-awesome-sass'
 # gem 'jquery-turbolinks'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -31,11 +35,7 @@ gem 'city-state'
 # Elasticsearch integration for rails active record
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
-gem 'bonsai-elasticsearch-rails'
 gem 'searchkick'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -51,4 +51,12 @@ group :development, :test do
   gem 'sdoc', group: :doc
 
   gem 'listen'
+
+  # Use Mina for deployment
+  # gem 'mina', group: :development
+end
+
+group :production do
+  # For use with elastic search on heroku
+  gem 'bonsai-elasticsearch-rails'
 end
